@@ -1,9 +1,9 @@
-DROP TABLE IF EXISTS books;
-CREATE TABLE `books` (
+DROP TABLE IF EXISTS diary;
+CREATE TABLE `days` (
     `id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
-    `title` VARCHAR(100),
-    `author` VARCHAR(100),
-    `done` BOOLEAN NOT NULL
+    `date` DATE,
+    `entry` VARCHAR(1500),
+    `accomplish` VARCHAR(255),
 ); 
-INSERT INTO `books` (title, author, done)
-    VALUES ('The Silent Patient', 'Alex Michaelides', true), ('The Truth About Luck', 'Iain Reid', false), ('From the Ashes', 'Jesse Thistle', false), ('The Psychology of Time Travel', 'Kate Mascarenhas', false);
+INSERT INTO `days` (date, entry, accomplish)
+    VALUES ('2022-12-21', 'I finished Christmas shopping today', 'finish Christmas shopping, do laundry'), ('2022-12-22', 'I was feeling productive today', 'watch lessons, visit the library');
