@@ -29,7 +29,9 @@ function App() {
 
   return (
     <div className="App">
+      <nav> Add Nav Bar</nav>
       <h1>dailyDiary</h1>
+      <h2> Daily inspiration quote</h2>  {/* make a component */}
       <AddEntry days={days} />
     </div>
   );
