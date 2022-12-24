@@ -29,10 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <title> dailyDiary </title>
-      <h1>
-
-      </h1>
+      <h1>dailyDiary</h1>
       <AddEntry days={days} />
     </div>
   );
