@@ -25,6 +25,7 @@ function AddEntry(props) {
     return (
         <div className="AddEntry">
             <form onSubmit={handleSubmit}>
+            <div className="gridRow">
             <label>
                 date
                 <input 
@@ -34,6 +35,17 @@ function AddEntry(props) {
                     onChange= {handleChange}
                 />
             </label>
+            <div className="spacing"> </div>
+            <label>
+                What did you do/Want to do today?
+                <textarea className="textareaShort"
+                    type="text" 
+                    name="accomplish"
+                    value={formData.accomplish}
+                    onChange={handleChange}
+                ></textarea>
+            </label>
+            </div>
 
             <label>
                 entry
@@ -46,17 +58,8 @@ function AddEntry(props) {
                 </textarea>
             </label>
 
-            <label>
-                What did you do/Want to do today?
-                <input 
-                    type="text" 
-                    name="accomplish"
-                    value={formData.accomplish}
-                    onChange={handleChange}
-                />
-            </label>
 
-            <button type="submit">Submit</button>
+            <button className="formButton" type="submit">Submit</button>
             </form>
         </div>
     );
