@@ -27,7 +27,7 @@ function AddEntry(props) {
             <form onSubmit={handleSubmit}>
             <div className="gridRow">
             <label>
-                date
+                Date yyyy-mm-dd
                 <input 
                     type="text" 
                     name="date"
@@ -37,7 +37,7 @@ function AddEntry(props) {
             </label>
             <div className="spacing"> </div>
             <label>
-                What did you do/Want to do today?
+                What do you want to or did you accomplish?
                 <textarea className="textareaShort"
                     type="text" 
                     name="accomplish"
@@ -48,7 +48,7 @@ function AddEntry(props) {
             </div>
 
             <label>
-                entry
+                Diary Entry
                 <textarea
                     type="text" 
                     name="entry"

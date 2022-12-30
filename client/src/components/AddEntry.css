@@ -24,6 +24,7 @@ textarea {
 .formButton {
     width:25%;
     text-align: center;
+    color: royalblue
 }
 
 .spacing {
@@ -32,4 +33,9 @@ textarea {
 
 .textareaShort {
     height: 14em;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rosybrown;
 }
