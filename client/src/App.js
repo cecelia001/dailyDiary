@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import AddEntry from "./components/AddEntry.js"
+import Error404View from './components/Error404View';
 
 import NavBar from "./components/NavBar.js"
 
@@ -55,12 +56,15 @@ function App() {
 
   return (
     <div className="App">
+       <NavBar />
+
       <h1>dailyDiary</h1>
       <h2> Daily inspiration quote</h2>  {/* make a component */}
 
-      <NavBar />
         <Routes>
+            <Route path="/"  />
             <Route path="/entry" element={<AddEntry days={days} addEntryCb={addEntry} /> } />
+            <Route path="*" element={<Error404View />} />
         </Routes>
     </div>
   );
