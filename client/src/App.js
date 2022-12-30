@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import AddEntry from "./components/AddEntry.js"
@@ -59,8 +60,7 @@ function App() {
 
       <NavBar />
         <Routes>
-            <Route path="/entry" element= {<AddEntry days={days} addEntryCb={addEntry} /> } />
-
+            <Route path="/entry" element={<AddEntry days={days} addEntryCb={addEntry} /> } />
         </Routes>
     </div>
   );

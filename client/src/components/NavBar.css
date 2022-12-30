@@ -1,0 +1,28 @@
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 25px;
+    background-color:rgb(241, 221, 195);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav a {
+    padding:20px;
+    font-size: 19px;
+}
+
+/* 'active' class automatically added by React Router */
+nav a.active {
+    /* text-decoration: underline dotted; */
+    font-weight:bold;
+    font-size: 25px;
+}
