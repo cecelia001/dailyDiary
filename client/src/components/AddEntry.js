@@ -18,7 +18,7 @@ function AddEntry(props) {
 
     function handleSubmit(event){
         event.preventDefault();
-        props.addEntry(formData);
+        props.addEntryCb(formData);
         setFormData(BLANK_FORM)
     };
 
