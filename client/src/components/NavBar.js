@@ -7,8 +7,9 @@ function NavBar() {
     return (
         <nav className="NavBar">
             <ul>
-                <li><NavLink to="/" end>Home</NavLink></li>
+                <li><NavLink to="" end>Home</NavLink></li>
                 <li><NavLink to="/entry">New Entry</NavLink></li>
+                <li><NavLink to="/diary">Read Diary</NavLink></li>
             </ul>
         </nav>
     );
