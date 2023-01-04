@@ -7,24 +7,32 @@ function ReadDiary(props) {
         <div className="ReadDiary">
             <h2> Past Entries </h2>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th> Date </th>
-                        <th> Entry </th>
-                    </tr>
-                </thead>
-            
-                <tbody>
-                    {props.days.map(e => 
-                      <td key={e.id} >
-                            <td>{e.date}</td>
-                            <td>{e.entry}</td>
-                    </td>
-                    )}
-                </tbody>        
+        <div>
+            <table className="head">
+            <thead>
+                <tr>
+                    <th> Date </th>
+                    <th> Entry </th>
+                </tr>
+            </thead>
             </table>
         </div>
+    
+    <div> {props.days.map(e => (
+        <li key={e.id} >
+            
+        <table className ="list">
+                <tbody>
+                        <td>{e.date} </td>
+                        <td>{e.entry}</td>
+                </tbody>                 
+            </table>
+
+        </li>
+        ))}
+    </div>
+    
+    </div>
     );
 }
 

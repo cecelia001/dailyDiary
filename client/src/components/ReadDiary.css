@@ -2,3 +2,25 @@ ol li{
     list-style-type: none;
     color: blue;
   }
+
+.list td, .list th, .head td, .head th {
+    list-style-type: none;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  
+.head th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #5067e7;
+    color: white;
+  }
+
+.spacing{
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
