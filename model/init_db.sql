@@ -9,4 +9,4 @@ CREATE TABLE `days` (
     `accomplish` VARCHAR(255)
 ); 
 INSERT INTO `days` (`date`, `entry`, `accomplish`)
-    VALUES ('12-21-2022', 'I finished Christmas shopping today', 'finish Christmas shopping, do laundry'), ('12-22-2022', 'I was feeling productive today', 'watch lessons, visit the library');
+    VALUES ('12-21-2022', 'I felt ready to take on the day this morning. Drank some tea and got started on the job hunt. Taking advice from leaders in the field and working on creating new projects.', 'finish Christmas shopping, do laundry'), ('12-22-2022', 'Rewatched some videos on React and Vue today. Its crazy how much you can pick up the second time around, when you are more comfortable with the topic. Excited to relax and wrap some Christmas presents tomorrow morning.', 'watch lessons, visit the library');
