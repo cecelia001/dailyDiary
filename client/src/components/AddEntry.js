@@ -27,7 +27,7 @@ function AddEntry(props) {
             <form onSubmit={handleSubmit}>
             <div className="gridRow">
             <label>
-                Date yyyy-mm-dd
+                Date mm-dd-yyyy
                 <input 
                     type="text" 
                     name="date"
