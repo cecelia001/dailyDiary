@@ -4,7 +4,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding: 25px;
+    padding:20px;
     background-color:rgb(241, 221, 195);
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 25px;
@@ -16,13 +16,14 @@ nav li {
 }
 
 nav a {
+    text-decoration: none;
     padding:20px;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 /* 'active' class automatically added by React Router */
 nav a.active {
-    /* text-decoration: underline dotted; */
+    text-decoration: none;
     font-weight:bold;
-    font-size: 25px;
+    font-size: 20px;
 }
