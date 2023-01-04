@@ -5,7 +5,6 @@ import "./ReadDiary.css"
 function ReadDiary(props) {
     return (
         <div className="ReadDiary">
-            <h2> Past Entries </h2>
 
         <div>
             <table className="head">
