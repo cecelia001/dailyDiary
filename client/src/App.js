@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 
 import AddEntry from "./components/AddEntry.js"
@@ -13,6 +13,8 @@ import NavBar from "./components/NavBar.js"
 function App() {
 
   const [days, setDays]= useState([])
+
+  const navigate = useNavigate();
 
   useEffect(()=> {
     getDays();
@@ -48,6 +50,7 @@ function App() {
       if (response.ok){
         let data = await response.json();
         setDays(data);
+        navigate('/diary');
       } else {
         console.log(`server error: ${response.status}: ${response.statusText}`);
       }

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./AddEntry.css"
 
 let BLANK_FORM= {
@@ -59,7 +59,7 @@ function AddEntry(props) {
             </label>
 
 
-            <button className="formButton" type="submit">Submit</button>
+            <button className="formButton" type="submit" >Submit</button>
             </form>
         </div>
     );
