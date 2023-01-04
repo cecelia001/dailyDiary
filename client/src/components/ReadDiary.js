@@ -9,29 +9,29 @@ function ReadDiary(props) {
 
         <div>
             <table className="head">
-            <thead>
-                <tr>
-                    <th> Date </th>
-                    <th> Entry </th>
-                </tr>
-            </thead>
+                <thead>
+                    <tr>
+                        <th> Date </th>
+                        <th> Entry </th>
+                    </tr>
+                </thead>
             </table>
         </div>
     
-    <div> {props.days.map(e => (
-        <li key={e.id} >
-            
-        <table className ="list">
+        <div> {props.days.map(e => (
+            <div key={e.id} >
+                
+            <table className ="list">
                 <tbody>
-                        <td>{e.date} </td>
-                        <td>{e.entry}</td>
+                    <td>{e.date} </td>
+                    <td>{e.entry}</td>
                 </tbody>                 
             </table>
 
-        </li>
-        ))}
-    </div>
-    
+            </div>
+            ))}
+        </div>
+
     </div>
     );
 }
