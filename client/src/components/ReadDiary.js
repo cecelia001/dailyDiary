@@ -10,10 +10,8 @@ function ReadDiary(props) {
         <div>
             <table className="head">
                 <thead>
-                    <tr>
-                        <th> Date </th>
-                        <th> Entry </th>
-                    </tr>
+                    <td className="date"> Date </td>
+                    <td> Entry </td>
                 </thead>
             </table>
         </div>
@@ -23,7 +21,7 @@ function ReadDiary(props) {
                 
             <table className ="list">
                 <tbody>
-                    <td>{e.date} </td>
+                    <td className="date">{e.date} </td>
                     <td>{e.entry}</td>
                 </tbody>                 
             </table>
