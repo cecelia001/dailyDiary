@@ -63,7 +63,7 @@ function App() {
     <div className="App">
        <NavBar />
 
-      <h1>dailyDiary</h1>
+      <h1>Dear Diary,</h1>
 
         <Routes>
             <Route path="" element={<Home />} />
