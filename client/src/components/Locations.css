@@ -1,4 +1,4 @@
-.ReadDiary {
+.Locations {
     text-align: center;
 }
 
@@ -19,7 +19,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     background-color:#e7f1fa;
-    color: white;
+    color: rgb(29, 65, 133);
   }
 
 .spacing{

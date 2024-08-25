@@ -5,8 +5,8 @@ nav {
 nav ul {
     list-style-type: none;
     padding:30px;
-    background-color:#e7f1fa;
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    background-color:#9caebe;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
 }
 
@@ -17,14 +17,15 @@ nav li {
 
 nav a {
     text-decoration: none;
-    padding:40px;
-    font-size: 50px;
+    padding:20px;
+    font-size: 40px;
     font-weight: 10px;
+    color: rgb(27, 27, 131);
 }
 
 /* 'active' class automatically added by React Router */
 nav a.active {
     text-decoration: none;
     font-weight:bold;
-    font-size: 70px;
+    font-size: 40px;
 }

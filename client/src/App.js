@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 
-import AddEntry from "./components/AddEntry.js"
+import AddEntry from "./components/Services.js"
 import Error404View from './components/Error404View';
-import ReadDiary from './components/ReadDiary';
+import ReadDiary from './components/Locations';
 import Home from './components/Home';
 
 import NavBar from "./components/NavBar.js"
@@ -63,12 +63,12 @@ function App() {
     <div className="App">
        <NavBar />
 
-      <h1>Dear Diary,</h1>
+      <h1>Middlebury Health</h1>
 
         <Routes>
             <Route path="" element={<Home />} />
-            <Route path="/entry" element={<AddEntry days={days} addEntryCb={addEntry} /> } />
-            <Route path="/diary" element={<ReadDiary days={days} /> } />
+            <Route path="/services" element={<AddEntry days={days} addEntryCb={addEntry} /> } />
+            <Route path="/locations" element={<ReadDiary days={days} /> } />
             <Route path="*" element={<Error404View />} />
         </Routes>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AddEntry.css"
+import "./Services.css"
 
 let BLANK_FORM= {
     date: "",
@@ -37,7 +37,7 @@ function AddEntry(props) {
             </label>
             <div className="spacing"> </div>
             <label>
-                What do you want to or did you accomplish?
+                What service are you looking for?
                 <textarea className="textareaShort"
                     type="text" 
                     name="accomplish"
@@ -48,7 +48,7 @@ function AddEntry(props) {
             </div>
 
             <label>
-                Diary Entry
+                Provide more info
                 <textarea
                     type="text" 
                     name="entry"
